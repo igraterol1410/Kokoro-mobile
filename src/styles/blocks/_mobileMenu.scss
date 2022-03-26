@@ -1,0 +1,22 @@
+.menu__box{
+    padding: 1rem 2rem;
+    background-color: #FCFCFC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px #F4F4F4;
+}
+
+.menu__title{
+    color: red;
+}
+
+.menu__icon{
+    font-size: 1.5rem;
+    color: #6F767E;
+}
+
+.logo__img{
+    height: 30px;
+}

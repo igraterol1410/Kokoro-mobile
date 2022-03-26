@@ -1,0 +1,22 @@
+.test__option{
+    background: #FFFFFF;
+    border: 1px solid #FF9900;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+    width: 90%;
+    color: #33383F;
+}
+
+.test__option-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.option__selected{
+    background-color: #FF9900;;
+    color: #FFFFFF;
+}

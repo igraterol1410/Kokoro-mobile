@@ -1,0 +1,53 @@
+.card__box{
+    padding:1.5rem 2rem;
+    background-color: #FCFCFC;
+    margin: 2rem auto;
+    width: 90%;
+    border-radius: 8px;
+}
+
+.card__header{
+    margin-bottom: 2rem;
+}
+
+.card__header-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #1A1D1F;
+}
+
+.card__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #33383F;
+}
+
+.card__button{
+    background: #33383F;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+
+.time__icon{
+    margin-right: .5rem;
+    color: #6F767E;
+    font-size: 1.25rem;
+    margin-bottom: .2rem;
+}

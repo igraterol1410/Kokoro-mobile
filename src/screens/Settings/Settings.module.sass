@@ -1,0 +1,181 @@
+@import ../../styles/helpers
+
+.settings
+    display: flex
+    align-items: flex-start
+    padding: 24px
+    border-radius: 8px
+    background: $n1
+    +t
+        display: block
+    +m
+        padding: 24px 16px
+    +dark
+        background: $n7
+
+.menu
+    position: sticky
+    top: 116px
+    display: flex
+    flex-direction: column
+    flex-shrink: 0
+    width: 280px
+    +d
+        width: 210px
+    +t
+        display: none
+    .button
+        padding: 8px 16px
+        border-radius: 8px
+        text-align: left
+        +base1-s
+        color: $n4
+        transition: all .2s
+        &:not(:last-child)
+            margin-bottom: 8px
+        &:hover,
+        &.active
+            color: $n7
+            +dark
+                color: $n1
+        &.active
+            background: $n3
+            +dark
+                background: $n6
+
+.wrapper
+    flex-grow: 1
+    padding-left: 32px
+    +t
+        padding-left: 0
+    & > .button
+        margin-top: 48px
+        +t
+            margin-top: 32px
+
+.dropdown
+    display: none
+    +t
+        display: block
+        margin-bottom: 32px
+    +m
+        margin-bottom: 24px
+
+.dropdownHead
+    +dark
+        background: $n6
+        box-shadow: 0 0 0 $n6 inset
+
+.item
+    position: relative
+    +t
+        display: none
+        &.active
+            display: block
+    &:not(:last-child)
+        margin-bottom: 48px
+        padding-bottom: 48px
+        border-bottom: 1px solid $n3
+        +t
+            margin-bottom: 0
+            padding-bottom: 0
+            border: none
+        +dark
+            border-color: $n6
+
+.anchor
+    position: absolute
+    top: -116px
+    left: 0
+    right: 0
+    +t
+        top: -106px
+.inner
+    display: flex
+    flex-direction: column
+    min-height: calc(100vh - 96px)
+    padding: 40px
+    +x
+        padding: 32px 24px
+    +m
+        padding: 24px 16px
+
+.container
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    &.wide
+        max-width: 100%
+.title_wrapper
+    margin-bottom: 56px
+    display: flex
+    +t
+        flex-direction: column
+    +m
+        margin-bottom: 30px
+
+.title
+    margin-bottom: 12px
+.subtitle
+    font-size: 20px
+    line-height: 32px
+    font-weight: 400
+    letter-spacing: -0.02em
+
+.footer
+    position: relative
+    //margin-left: 340px
+
+    display: flex
+    padding: 24px 40px
+    background: $n1
+    box-shadow: inset 1px 0px 0px $n2, inset 0 -1px 0px $n3
+    +x
+        //margin-left: 300px
+        padding: 16px 24px
+    +d
+        //margin-left: 96px
+        //justify-content: center
+
+    +m
+        //margin-left: 0
+        justify-content: flex-start
+        padding: 16px 24px 16px 16px
+    +dark
+        background: $n7
+        box-shadow: inset 1px 0px 0px $n8, inset 0 -1px 0px $n8
+    a
+        margin-right: 8px
+        &:last-child
+            margin-right: 0
+    button
+        margin-right: 10px
+        &:last-child
+            margin-right: 0
+
+.nav
+    display: flex
+    margin-left: auto
+    +t
+        display: none
+
+.link
+    padding: 8px 16px
+    border-radius: 8px
+    +base1-s
+    color: $n4
+    transition: all .2s
+    &:hover,
+    &.active
+        color: $n7
+        +dark
+            color: $n1
+    &.active
+        background: $n3
+        +dark
+            background: $n6
+    &:not(:last-child)
+        margin-right: 8px

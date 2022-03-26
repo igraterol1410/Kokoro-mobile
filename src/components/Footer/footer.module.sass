@@ -1,0 +1,31 @@
+@import ../../styles/helpers
+
+.footer
+    position: sticky
+    //margin-left: 340px
+
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding: 15px 40px
+    background: #f4f4f4
+    bottom: 0
+    // box-shadow: inset 1px 0px 0px $n2, inset 0 -1px 0px $n3
+    +x
+        //margin-left: 300px
+        padding: 16px 24px
+    +d
+        //margin-left: 96px
+        //justify-content: center
+
+    +m
+        //margin-left: 0
+        justify-content: flex-start
+        padding: 16px 24px 16px 16px
+    +dark
+        background: $n7
+        box-shadow: inset 1px 0px 0px $n8, inset 0 -1px 0px $n8
+    a
+        margin-right: 8px
+        &:last-child
+            margin-right: 0

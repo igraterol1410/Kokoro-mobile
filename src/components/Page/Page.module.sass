@@ -1,0 +1,66 @@
+@import ../../styles/helpers
+
+.page
+    padding: 96px 0 0 286px
+    &.page3
+        padding: 96px 0 0 0
+    +x
+        padding: 80px 0 0 300px
+    +d
+        padding-left: 96px
+    +t
+        overflow: hidden
+    +m
+        padding-left: 0
+    &.page4
+        padding: 0
+
+.sidebar
+    +m
+        transform: translateX(-100%)
+        transition: transform .3s
+        &.visible
+            transform: translateX(0)
+
+.inner
+    display: flex
+    flex-direction: column
+    min-height: calc(100vh - 96px)
+    padding: 25px
+    +x
+        padding: 32px 24px
+    +m
+        padding: 24px 16px
+
+.container
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    &.wide
+        max-width: 100%
+.title_wrapper
+    margin-bottom: 56px
+    +m
+        margin-bottom: 30px
+
+.title
+    margin-bottom: 12px
+.subtitle
+    font-size: 17px
+    line-height: 20px
+    font-weight: 400
+    letter-spacing: -0.02em
+.bg_imge
+    // height: 353px;
+    width: 100%
+    img
+        // height: 100%
+        width: 100%
+        object-fit: fill
+        // clip-path: inset(0px 0px 222px 0px)
+.page4
+    .inner
+        padding: 0px

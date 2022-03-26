@@ -1,0 +1,209 @@
+
+@import ../../styles/helpers
+.inner
+    display: flex
+    flex-direction: column
+    min-height: calc(100vh - 96px)
+    padding: 40px
+    +x
+        padding: 32px 24px
+    +m
+        padding: 24px 16px
+
+.container
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    &.wide
+        max-width: 100%
+.title_wrapper
+    margin-bottom: 56px
+    display: flex
+    +t
+        flex-direction: column
+    +m
+        margin-bottom: 30px
+
+.title
+    margin-bottom: 12px
+.subtitle
+    font-size: 20px
+    line-height: 32px
+    font-weight: 400
+    letter-spacing: -0.02em
+
+.footer
+    position: relative
+    //margin-left: 340px
+
+    display: flex
+    padding: 24px 40px
+    background: $n1
+    box-shadow: inset 1px 0px 0px $n2, inset 0 -1px 0px $n3
+    +x
+        //margin-left: 300px
+        padding: 16px 24px
+    +d
+        //margin-left: 96px
+        //justify-content: center
+
+    +m
+        //margin-left: 0
+        justify-content: flex-start
+        padding: 16px 24px 16px 16px
+    +dark
+        background: $n7
+        box-shadow: inset 1px 0px 0px $n8, inset 0 -1px 0px $n8
+    a
+        margin-right: 8px
+        &:last-child
+            margin-right: 0
+    button
+        margin-right: 10px
+        &:last-child
+            margin-right: 0
+
+.nav
+    display: flex
+    margin-left: auto
+    +t
+        display: none
+
+.link
+    padding: 8px 16px
+    border-radius: 8px
+    +base1-s
+    color: $n4
+    transition: all .2s
+    &:hover,
+    &.active
+        color: $n7
+        +dark
+            color: $n1
+    &.active
+        background: $n3
+        +dark
+            background: $n6
+    &:not(:last-child)
+        margin-right: 8px
+
+// new css 
+.heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+.yes_no
+    font-size: 20px
+    lnheight: 32px
+    font-weight: 600
+    color: $n7
+    +dark
+        color: $n3
+
+.text_base
+    color: $n5
+    font-size: 14px
+    line-height: 24px
+    +dark
+        color: $n3
+.gray_icon
+    fill: $shades1
+    +dark
+        fill: $n4
+.icon_box
+    display: flex
+    +m
+        display: block
+.single_icon
+    display: flex
+    align-items: center
+    margin-right: 20px
+    &:last-child
+        margin-right: 0
+    span
+        font-weight: 600
+        color: $n7
+        +dark
+            color: $n3
+        display: inline-block
+        margin-right: 4px
+        font-size: 15px
+        line-height: 24px
+.icon
+    height: 64px
+    width: 64px
+    border: 2px solid $n3
+    border-radius: 50%
+    line-height: 64px
+    text-align: center
+    margin-right: 10px
+
+.post_col
+    flex: 0 0 calc(33.33% - 8px)
+    max-width: calc(33.33% - 8px)
+    margin-right: 8px
+    +t
+        flex: 0 0 calc(50% - 8px)
+        max-width: calc(50% - 8px)
+    +m
+        flex: 0 0 100%
+        max-width: 100%
+        margin-right: 0
+
+    &:last-child
+        margin-right: 0
+    h4
+        font-size: 20px
+        line-height: 32px
+        font-weight: 600
+        color: $n5
+        +dark
+            color: $n3
+    .text
+        font-size: 15px
+        line-height: 24px
+        font-weight: 400
+        color: $n7
+        +dark
+            color: $n3
+    .header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 24px
+
+    .footers
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 28px
+        .btn
+            padding: 4px 8px
+            border-radius: 6px
+            color: #fff
+            font-weight: 600
+            font-size: 15px
+            line-height: 24px
+
+        span
+            display: inline-block
+
+            svg
+                fill: $n5
+                margin-right: 4px
+                +dark
+                    fill: $n3
+
+.post_p
+    display: flex
+    flex-wrap: wrap
+.new_icon_box
+    .single_icon
+        flex: 1 !important
+.button_dark
+    background-color: #33383F
+    &:hover
+        background-color: darken(#33383F, 5%)

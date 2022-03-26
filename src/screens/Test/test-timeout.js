@@ -1,0 +1,56 @@
+import React, { useState } from "react";
+import cn from "classnames";
+import styles from "./test.module.sass";
+import Card from "../../components/Card";
+import Icon from "../../components/Icon";
+import Image from "../../components/Image";
+import Checkbox from "../../components/Checkbox";
+import Dropdown from "../../components/Dropdown";
+
+import { Link } from "react-router-dom";
+import ModalCard from "../../components/ModalCard";
+// data
+
+const TestTimeout = ({ wide }) => {
+  return (
+    <React.Fragment>
+      <div className={styles.inner2}>
+        <div
+          className={cn(styles.container, {
+            [styles.wide]: wide,
+          })}
+        >
+          <div className="text-center">
+            <h4 className={styles.done}>Prueba finalizada</h4>
+            <h2 className={styles.bkd}>
+              Ups..se acabó el tiempo
+            </h2>
+            <img src="/images/svg/fx.svg" alt="" className=" mb-58" />
+          </div>
+          <div className={styles.plain_text}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+      <div className={cn(styles.footer, styles.item_center)}>
+        <div className="flex-1"></div>
+        <div className="flex-0">
+          <Link
+            to="/start-form"
+            className={cn("button-primary", styles.button)}
+          >
+            > Continuar
+          </Link>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default TestTimeout;
