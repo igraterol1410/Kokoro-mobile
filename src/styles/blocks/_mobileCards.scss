@@ -45,9 +45,42 @@
     color: #FFFFFF;
 }
 
+.button-purple{
+    background-color: #CABDFF;
+    color: #33383F;
+}
+
+.button-blue{
+    background-color: #B1E5FC;
+    color: #33383F;
+}
+
+.button-green{
+    background-color: #B5E4CA;
+    color: #33383F;
+}
+
 .time__icon{
     margin-right: .5rem;
     color: #6F767E;
     font-size: 1.25rem;
     margin-bottom: .2rem;
+}
+
+.report__card-rank{
+    padding: .25rem .5rem;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.rank__high{
+    background-color: #83BF6E;
+}
+
+.rank__medium{
+    background-color: #FFD88D;
+}
+
+.rank__low{
+    background-color: #FF6A55;
 }

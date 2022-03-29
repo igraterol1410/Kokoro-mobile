@@ -14,6 +14,9 @@ import PostulantHome from "./postulant/PostulantHome";
 import Instructions from "./tests/Instruccions";
 import ExpiredTime from "./tests/ExpiredTime";
 import TestContainer from "./tests/TestContainer";
+import YourProcess from "./yourProcess/YourProcess";
+import Bookstore from "./bookstore/Bookstore";
+import ProcessReport from "./report/ProcessReport";
 
 
 const Home = () => {
@@ -41,6 +44,9 @@ const Home = () => {
             <ProcessRouter exact path={`${path}/test-instructions`} component={Instructions} />
             <ProcessRouter exact path={`${path}/expired-time`} component={ExpiredTime} />
             <ProcessRouter exact path={`${path}/test`} component={TestContainer} />
+            <ProcessRouter exact path={`${path}/yourProcess`} component={YourProcess} />
+            <ProcessRouter exact path={`${path}/bookstore`} component={Bookstore} />
+            <ProcessRouter exact path={`${path}/processReport`} component={ProcessReport} />
           </Switch>
         </Router>
     </>

@@ -19,7 +19,8 @@ const TestContainer = () => {
 
     const handleSelect = (option) => {
         setOptionSelected(option.id)
-        multipleOption.push(option.id)
+        multipleOption.push(...multipleOption, option.id)
+        console.log(multipleOption)
         getClase(option)
     }
 
@@ -39,7 +40,7 @@ const TestContainer = () => {
 
         {
             options && options.map((option)=>(
-                <div key={option.id} className={getClase(option)} onClick={()=>handleSelect(option)}><span className='test__option-text'>{option?.answer}</span></div>
+                <div key={option.id} className={option.id === optionSelected ? 'test__option option__selected' : 'test__option'} onClick={()=>handleSelect(option)}><span className='test__option-text'>{option?.answer}</span></div>
             ))
         }
 

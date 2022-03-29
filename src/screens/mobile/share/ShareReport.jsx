@@ -3,6 +3,7 @@ import { Field, Form, Formik } from 'formik';
 import { Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import IntialText from '../components/IntialText';
+import { IoSend } from "react-icons/io5";
 
 const ShareReport = () => {
   return (
@@ -49,7 +50,7 @@ const ShareReport = () => {
             </div>
 
             {/* BOTON DE INVITAR */}
-            <Button className='mobile__button'><Icon icon="fluent:send-28-filled" /> <span>Enviar reporte</span></Button>
+            <Button className='mobile__button'><IoSend className='button__icon' /> <span>Enviar reporte</span></Button>
 
           </Form>
         )}

@@ -3,6 +3,7 @@ import { Field, Form, Formik } from 'formik';
 import { Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import IntialText from '../components/IntialText';
+import { IoSend } from "react-icons/io5";
 
 const Invitation = () => {
   return (
@@ -55,7 +56,7 @@ const Invitation = () => {
             </div>
 
             {/* BOTON DE INVITAR */}
-            <Button className='mobile__button'><Icon icon="fluent:send-28-filled" /> <span>Invitar postulante</span></Button>
+            <Button className='mobile__button'><IoSend className='button__icon' /> <span>Invitar postulante</span></Button>
 
           </Form>
         )}
