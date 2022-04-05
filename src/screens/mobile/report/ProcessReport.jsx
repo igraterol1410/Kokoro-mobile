@@ -1,6 +1,6 @@
 import React from 'react';
 import IntialText from '../components/IntialText';
-import ReportImgage from '../../../assets/sello.svg';
+import ReportImgage from '../../../assets/sello-2.png';
 import { IoSend } from "react-icons/io5";
 
 const ProcessReport = () => {

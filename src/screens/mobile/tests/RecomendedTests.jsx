@@ -32,7 +32,7 @@ const handleChangeTests = () => {
     <>
       {/* AVISO DE BIENVENIDA */}
       {
-        buttonIcon === 0 || buttonIcon === 2 &&
+        buttonIcon != 1 &&
       <IntialText text={mainText} textClase={''}/>
       }
       {
@@ -48,7 +48,7 @@ const handleChangeTests = () => {
               <Field
                 type='text'
                 className='process__input'
-                placeholder='Busca en tus procesos'
+                placeholder='Busca una prueba'
                 name='processName'
               />
 
@@ -58,7 +58,7 @@ const handleChangeTests = () => {
                       className='process__form-input'
                       name='processArea'
                     >
-                  <option value='1'>Selecciona todas las pruebas</option>
+                  <option value='1'>Mostrar todas las pruebas</option>
                   <option value='2'>prueba 2</option>
                   <option value='3'>Prueba 3</option>
                 </Field>
@@ -101,7 +101,7 @@ const handleChangeTests = () => {
 {
   buttonIcon === 1 &&
   <>
-    <button onClick={()=>{setButtonIcon(2); setMainText(`tienes ${tests.length} pruebas seleccionadas`)}} className='mobile__button'><AiOutlinePlus className='button__icon' /> <span>Continuar</span></button>
+    <button onClick={()=>{setButtonIcon(2); setMainText(`Tienes ${tests.length} pruebas seleccionadas`)}} className='mobile__button'><AiOutlinePlus className='button__icon' /> <span>Continuar</span></button>
   </>
 }
 {

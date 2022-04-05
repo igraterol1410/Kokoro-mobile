@@ -3,6 +3,7 @@ import { Field, Form, Formik } from 'formik';
 import { Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import IntialText from '../components/IntialText';
+import { IoSend } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -53,7 +54,7 @@ const About = () => {
             </div>
             
             {/* BOTON DE CONTINUAR */}
-            <Button className='mobile__button'><Icon icon="fluent:send-28-filled" /> <span>Continuar</span></Button>
+            <Button className='mobile__button'><IoSend className='button__icon' /> <span>Continuar</span></Button>
 
           </Form>
         )}

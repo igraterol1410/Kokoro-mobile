@@ -21,7 +21,7 @@ const Bookstore = () => {
               <Field
                 type='text'
                 className='process__input'
-                placeholder='Busca en tus procesos'
+                placeholder='Busca una prueba'
                 name='processName'
               />
 
@@ -31,7 +31,7 @@ const Bookstore = () => {
                       className='process__form-input'
                       name='processArea'
                     >
-                  <option value='1'>Selecciona todas las pruebas</option>
+                  <option value='1'>Mostrar todas las pruebas</option>
                   <option value='2'>prueba 2</option>
                   <option value='3'>Prueba 3</option>
                 </Field>

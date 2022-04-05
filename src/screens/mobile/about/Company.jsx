@@ -3,6 +3,9 @@ import { Field, Form, Formik } from 'formik';
 import { Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import IntialText from '../components/IntialText';
+import { IoSend } from "react-icons/io5";
+import { AiOutlineUpload } from "react-icons/ai";
+
 
 const company = () => {
   return (
@@ -49,10 +52,10 @@ const company = () => {
             </div>
 
             {/* BOTON DE SUBIR LOGO */}
-            <Button className='mobile__button secundary__button'><Icon icon="ant-design:upload-outlined" />  <span>Subir logo</span></Button>
+            <Button className='mobile__button secundary__button'><AiOutlineUpload className='button__icon' />  <span>Subir logo</span></Button>
             
             {/* BOTON DE CONTINUAR */}
-            <Button className='mobile__button'><Icon icon="fluent:send-28-filled" /> <span>Continuar</span></Button>
+            <Button className='mobile__button'><IoSend className='button__icon' /> <span>Continuar</span></Button>
 
           </Form>
         )}

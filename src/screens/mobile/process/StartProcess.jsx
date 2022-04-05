@@ -3,6 +3,7 @@ import { Field, Form, Formik } from 'formik';
 import { Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import IntialText from '../components/IntialText';
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const StartProcess = () => {
   return (
@@ -30,7 +31,7 @@ const StartProcess = () => {
               </div>
 
               <div className='process__input-box'>
-              <label className="process__label">Selecciona un perfil</label>
+              <label className="process__label">Selecciona un área</label>
                 <Field
                   as='select'
                   className='process__form-input'
@@ -40,6 +41,20 @@ const StartProcess = () => {
                   <option>Opcion 1</option>
                   <option>Opcion 2</option>
                   <option>Opcion 3</option>
+                </Field>
+              </div>
+              
+              <div className='process__input-box'>
+              <label className="process__label">Selecciona una jerarquía</label>
+                <Field
+                  as='select'
+                  className='process__form-input'
+                  name='processRank'
+                >
+                  <option>Jerarquía</option>
+                  <option>Jerarquía 1</option>
+                  <option>Jerarquía 2</option>
+                  <option>Jerarquía 3</option>
                 </Field>
               </div>
 
@@ -79,7 +94,7 @@ const StartProcess = () => {
             </div>
 
             {/* BOTON DE CONTINUAR */}
-            <Button className='mobile__button'><Icon className='' icon="ic:outline-navigate-next" /> <span>Crear nuevo proceso</span></Button>
+            <Button className='mobile__button'><MdOutlineKeyboardArrowRight className='button__icon' style={{fontSize:'1.8rem'}} /> <span>Crear nuevo proceso</span></Button>
 
           </Form>
         )}

@@ -3,7 +3,7 @@ import { Field, Form, Formik } from 'formik';
 import { Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import IntialText from '../components/IntialText';
-import ReportImgage from '../../../assets/sello.svg'
+import ReportImgage from '../../../assets/sello-2.png'
 import { BiAlarm } from "react-icons/bi";;
 
 const Report = () => {

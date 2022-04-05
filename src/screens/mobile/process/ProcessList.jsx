@@ -3,6 +3,7 @@ import { Field, Form, Formik } from 'formik';
 import { Button } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import IntialText from '../components/IntialText';
+import { AiOutlinePlus } from "react-icons/ai";
 
 const ProcessList = () => {
   return (
@@ -51,7 +52,7 @@ const ProcessList = () => {
       </div>
 
       {/* BOTON DE CREAR NUEVO PROCESO */}
-      <Button className='mobile__button'><Icon icon="akar-icons:plus" />   Crear nuevo proceso</Button>
+      <Button className='mobile__button' ><AiOutlinePlus className='button__icon' />   Crear nuevo proceso</Button>
 
     </>
   )
